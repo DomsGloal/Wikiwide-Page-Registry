@@ -1,11 +1,26 @@
-@import "tailwindcss";
 
+
+/* ✅ All @import statements go first */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap');
+
+/* ✅ Then other rules like @font-face */
 @font-face {
   font-family: 'Libertinus Math';
   src: url('/fonts/LibertinusMath-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
-/* globals.css or in your main CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap')
+
+/* ✅ Then custom properties */
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+/* ✅ Then your CSS classes and styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
