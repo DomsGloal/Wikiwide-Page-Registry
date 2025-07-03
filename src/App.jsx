@@ -8,6 +8,7 @@ import RegistrySection from './components/Register';
 import './index.css';
 import Footer from './components/Footer';
 import Faq from './components/Faqpage';
+import RefundPolicy from './components/RefundPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/registry" element={<RegistrySection />} />
         <Route path='/faqs' element = {<Faq/>}/>
+        <Route path='/refund'  element = {<RefundPolicy/> } /> 
       
       </Routes>
       {/* <Footer /> */}
