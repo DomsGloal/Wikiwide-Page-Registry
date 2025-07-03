@@ -9,7 +9,7 @@ import Commom from '../assets/common.png'
 
 const RefundEligibility = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12 text-gray-800 space-y-16">
+    <div className="max-w-6xl ml-auto mr-auto mx-auto px-4 py-12 text-gray-800 space-y-16">
 
 
 
@@ -27,19 +27,20 @@ const RefundEligibility = () => {
 
       {/* Top Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-       <div className="flex items-center gap-4 p-4 rounded-lg bg-black text-white border shadow-md">
+     <div className="flex flex-row  gap-4 p-4 rounded-lg p-7 md:p-5  bg-black text-white border shadow-md h-full">
   <img
     src={Nonrefund}
     alt="Non-Refundable"
-    className="w-32 h-40 object-contain"
+    className="w-24 md:pt-14 lg:pt-7  sm:w-24 md:w-20 object-contain self-start"
   />
-  <div>
-    <h3 className="font-semibold text-lg">Non-Refundable Application Fee</h3>
-    <p className="text-sm mt-1 ">
+  <div className="text-left ">
+    <h3 className="font-semibold  text-lg">Non-Refundable Application Fee</h3>
+    <p className="text-sm mt-1">
       Application fees are non-refundable, includ...
     </p>
   </div>
 </div>
+
 
         <div className="p-6 rounded-lg  shadow-md flex flex-col justify-center items-center">
           <h2 className="text-2xl font-bold mb-2">Refund Eligibility</h2>
